@@ -3,7 +3,7 @@
 /********** Theme: dark **********/
 /* Font styles */
 .flipdown.flipdown__theme-dark {
-  font-family: sans-serif;
+  font-family: cursive;
   font-weight: bold;
 }
 /* Rotor group headings */
@@ -36,7 +36,7 @@
 /********** Theme: light **********/
 /* Font styles */
 .flipdown.flipdown__theme-light {
-  font-family: sans-serif;
+  font-family: cursive;
   font-weight: bold;
 }
 /* Rotor group headings */
@@ -70,8 +70,8 @@
 
 .flipdown {
   overflow: visible;
-  width: 510px;
-  height: 110px;
+  width: 700px;
+  height: 200px;
 }
 
 .flipdown .rotor-group {
