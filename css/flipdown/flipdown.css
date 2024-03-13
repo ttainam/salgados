@@ -29,9 +29,9 @@
   background-color: #202020;
 }
 /* Hinge */
-/* .flipdown.flipdown__theme-dark .rotor:after {
-  border-top: solid 1px #151515;
-} */
+.flipdown.flipdown__theme-dark .rotor:after {
+display: none;
+}
 
 /********** Theme: light **********/
 /* Font styles */
