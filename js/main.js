@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-      var targetDateGMT = new Date('2023-12-20T15:00:00Z');
+      var targetDateGMT = new Date('2024-03-28T00:00:00Z');
       var currentDateGMT = new Date();
       var timeDifference = currentDateGMT.getTimezoneOffset() * 60 * 1000;
       var targetDateAdjusted = new Date(targetDateGMT.getTime() + timeDifference);
