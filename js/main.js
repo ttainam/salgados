@@ -22,10 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // Show version number
 var ver = document.getElementById('ver');
 ver.innerHTML = flipdown.version;
-});
 
 
-const data = {
+  const data = {
     pedido: {
         itens: [
             {
@@ -234,14 +233,16 @@ const data = {
             }
         ]
     }
-};
+  };
 
-function storeData() {
+  function storeData() {
   localStorage.setItem('_cart', JSON.stringify(data));
   alert('Data stored in localStorage');
-}
+  }
 
-document.getElementById('meuBotao').addEventListener('click', function(event) {
+  document.getElementById('meuBotao').addEventListener('click', function(event) {
   event.preventDefault(); // Prevent the default link behavior
   storeData();
+  });
 });
+
