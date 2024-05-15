@@ -232,8 +232,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('meuBotao').addEventListener('click', function(event) {
     event.preventDefault();
-    localStorage.setItem('_cart', JSON.stringify(dados));
     window.open("https://deliciasdagrazzi.qrpedir.com/","_blank")
+
+    setTimeout(() => {
+      localStorage.setItem('_cart', JSON.stringify(dados));
+    }, 500);
+
   });
 });
 
