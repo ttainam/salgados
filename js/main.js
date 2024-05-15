@@ -232,12 +232,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('meuBotao').addEventListener('click', function(event) {
     event.preventDefault();
-    window.open("https://deliciasdagrazzi.qrpedir.com/","_blank")
-
-    setTimeout(() => {
-      localStorage.setItem('_cart', JSON.stringify(dados));
-    }, 500);
-
+    var newTab = window.open("https://deliciasdagrazzi.qrpedir.com/","_blank")
+    newTab.onload = function() {
+      newTab.localStorage.setItem('_cart', JSON.stringify(dados));
+    };
   });
 });
 
