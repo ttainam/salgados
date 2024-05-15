@@ -19,12 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     body.querySelector('#flipdown').classList.toggle('flipdown__theme-light');
   }, 5000);
 
-// Show version number
-var ver = document.getElementById('ver');
-ver.innerHTML = flipdown.version;
-
-
-  const data = {
+  const dados = {
     pedido: {
         itens: [
             {
@@ -235,14 +230,9 @@ ver.innerHTML = flipdown.version;
     }
   };
 
-  function storeData() {
-  localStorage.setItem('_cart', JSON.stringify(data));
-  alert('Data stored in localStorage');
-  }
-
   document.getElementById('meuBotao').addEventListener('click', function(event) {
-  event.preventDefault(); // Prevent the default link behavior
-  storeData();
+    event.preventDefault();
+    localStorage.setItem('_cart', JSON.stringify(dados));
   });
 });
 
