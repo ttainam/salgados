@@ -241,11 +241,6 @@ function storeData() {
   alert('Data stored in localStorage');
 }
 
-const link = document.getElementById('meuBotao2');
-
-// Adicionar um event listener para o evento de clique
-link.addEventListener('click', setLocalStorageOnClick);
-
 document.getElementById('meuBotao').addEventListener('click', function(event) {
   event.preventDefault(); // Prevent the default link behavior
   storeData();
