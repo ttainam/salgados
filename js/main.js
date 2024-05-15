@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .ifEnded(() => {
       console.log('O contador chegou ao fim!');
     });
-;
+
   var interval = setInterval(() => {
     let body = document.body;
     body.classList.toggle('light-theme');
