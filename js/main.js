@@ -238,6 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
     event.preventDefault();
     var newTab = window.open("https://deliciasdagrazzi.qrpedir.com/","_blank")
     newTab.onload = function() {
+      console.log('teste');
       newTab.localStorage.setItem('_cart', JSON.stringify(dados));
       newTab.localStorage.setItem('id_token', JSON.stringify({"ultimaLeituraQRCode":"2024-05-17T20:20:09.523Z"}));
       newTab.localStorage.setItem('_configuracoes', 'deliciasdagrazzi');  
