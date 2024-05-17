@@ -237,6 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('meuBotao').addEventListener('click', function(event) {
     event.preventDefault();
     var newTab = window.open("https://deliciasdagrazzi.qrpedir.com/","_blank")
+    console.log('12312312312');
     newTab.onload = function() {
       console.log('teste');
       newTab.localStorage.setItem('_cart', JSON.stringify(dados));
