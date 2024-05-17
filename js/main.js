@@ -227,7 +227,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 uuid: "4.211f.4ac15.c6b38d.1b006c3.e444b67b.70a6112e.1321190f83.58728c77e6-b.05fe209d5a2e.5f00f80512f49.bc381fcd8ad72.c31d98404418-49.c562477485ff6.ab457b5a7e4a2.61cb5a1fd7a1-a1.4d833342a9c29.a5a9e4ca6f96d.80dccad1e4d6-f.724af6ae7b922.dd54005f868d3.f4185cb600fab.0212d456bc399.04aa83e548e53.b25bc369c52bb.cd6b42f73eb3a.c113257c4f332.03ca861f64cae.0b7dcd93401e9.32378a750d8c6.4207a2f69cf7"
             }
         ]
-    }
+    },
+    "createdAt":"2024-05-15T14:04:02.975Z",
+    "valorTotalPedido":72.25
   };
 
   document.getElementById('meuBotao').addEventListener('click', function(event) {
