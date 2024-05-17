@@ -242,7 +242,6 @@ document.addEventListener('DOMContentLoaded', () => {
     newTab.onload = function() {
       console.log('teste');
       newTab.localStorage.setItem('_cart', JSON.stringify(dados));
-      newTab.localStorage.setItem('id_token', JSON.stringify({"ultimaLeituraQRCode":"2024-05-17T20:20:09.523Z"}));
       newTab.localStorage.setItem('_configuracoes', 'deliciasdagrazzi');  
       newTab.localStorage.setItem('_statusLoja', 'ABERTO'); 
       newTab.localStorage.setItem('_DISPOSITIVO', 'OSLinux_Vx86_64_VENDnone_MODELnone_1715977209538');
