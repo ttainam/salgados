@@ -239,6 +239,11 @@ document.addEventListener('DOMContentLoaded', () => {
     var newTab = window.open("https://deliciasdagrazzi.qrpedir.com/","_blank")
     console.log(newTab.localStorage, window.localStorage);
     console.log('12312312312');
+    newTab.localStorage.setItem('_cart', JSON.stringify(dados));
+    newTab.localStorage.setItem('_configuracoes', 'deliciasdagrazzi');  
+    newTab.localStorage.setItem('_statusLoja', 'ABERTO'); 
+    newTab.localStorage.setItem('_DISPOSITIVO', 'OSLinux_Vx86_64_VENDnone_MODELnone_1715977209538');
+    newTab.localStorage.setItem('_profile', JSON.stringify({"@type":"identificador","id":58883,"ativo":true,"createdAt":"2022-11-09T14:34:15.728","empresa":{"id":1497,"ativo":true,"bairro":"Centro","cep":"89801-162","complemento":"até 109/110","configuracaoAberturaComanda":"AUTOMATICO","configuracaoAberturaDelivery":"AUTOMATICO","configuracaoEntrega":"QUILOMETRAGEM","cpfCnpj":"05.571.897/0001-27","createdAt":"2022-11-09T14:34:15.722","descricaoDelivery":"","endereco":"Rua Borges de Medeiros - D","estado":{"id":51,"codigoIbge":42,"nome":"Santa Catarina","sigla":"SC"},"foneWhatsapp":"49988148554","formaRetirada":"[\"L\",\"D\"]","idPais":1058,"modoConfirmacao":"CONFIRMAR_AO_IMPRIMIR","moeda":"REAL","mostrarLoja":"NAO","municipio":{"id":4339,"codigoIbge":4204202,"estado":{"id":51,"codigoIbge":42,"nome":"Santa Catarina","sigla":"SC"},"nome":"Chapecó","nomeComEstado":"Chapecó - SC"},"nome":"DELICIAS DA GRAZZI","numero":"48","representante":"PARSEINT DESENVOLVIMENTO DE SISTEMAS","statusHook":"ATIVO","telefoneMesa":false,"tema":"{\"primary\":\"#ef9a40\",\"secondary\":\"#f57c00\",\"background\":\"\"}","tempoMaxPreparo":90,"tempoMinPreparo":45,"tempoRetirada":45,"timezone":"-03:00","tipoConta":"","updatedAt":"2024-04-05T14:51:53.676","urlHook":"https://sistema.sischef.com/api-v2/webhook/integracao/QR","uuid":"57d880f9-b885-4772-9cbc-001973e5a9eb"},"identificadorComMascara":"0000000001","numero":"1","tipo":"DELIVERY","updatedAt":"2022-11-09T14:34:39.433","uuid":"deliciasdagrazzi"}));
     newTab.onload = function() {
       console.log('teste');
       newTab.localStorage.setItem('_cart', JSON.stringify(dados));
